@@ -12,6 +12,10 @@ var obsnine;
 var obsten;
 var obseleven;
 var obstwelve;
+var move1;
+var move2;
+var move3;
+var move4;
 var edges;
 
 
@@ -32,6 +36,10 @@ function setup() {
   obsten=createSprite(90,280,100,20);
   obseleven=createSprite(195,200,100,20);
   obstwelve=createSprite(390,200,100,20);
+  move1=createSprite(20,235,100,20);
+  move2=createSprite(580,325,100,20);
+  move3=createSprite(20,385,100,20);
+  move4=createSprite(580,455,100,20);
  rabbit.shapeColor="brown";
  carrot.shapeColor="orange";
   obsone.shapeColor="red";
@@ -46,6 +54,10 @@ function setup() {
   obsten.shapeColor="red";
   obseleven.shapeColor="red";
   obstwelve.shapeColor="red";
+  move1.shapeColor="maroon";
+  move2.shapeColor="maroon";
+  move3.shapeColor="maroon";
+  move4.shapeColor="maroon";
 }
 
 function draw() {
@@ -124,6 +136,24 @@ function draw() {
    rabbit.y=550;
   }
   if (rabbit.isTouching(obsnine))
+  {
+    text("you lose" , 200,200)
+   rabbit.x=40;
+   rabbit.y=550;
+  }
+  if (rabbit.isTouching(obsten))
+  {
+    text("you lose" , 200,200)
+   rabbit.x=40;
+   rabbit.y=550;
+  }
+  if (rabbit.isTouching(obseleven))
+  {
+    text("you lose" , 200,200)
+   rabbit.x=40;
+   rabbit.y=550;
+  }
+  if (rabbit.isTouching(obstwelve))
   {
     text("you lose" , 200,200)
    rabbit.x=40;
