@@ -4,6 +4,14 @@ var obsone;
 var obstwo;
 var obsthree;
 var obsfour;
+var obsfive;
+var obssix;
+var obsseven;
+var obseight;
+var obsnine;
+var obsten;
+var obseleven;
+var obstwelve;
 var edges;
 
 
@@ -12,20 +20,32 @@ function setup() {
   edges=createEdgeSprites();
  rabbit=createSprite(40,550,30,30);
  carrot=createSprite(550,40,30,30);
-  obsone=createSprite(300,120,100,20);
-  obsone.velocityX=5;
-  obstwo=createSprite(300,220,100,20);
-  obstwo.velocityX=-5;
-  obsthree=createSprite(300,320,100,20);
-  obsthree.velocityX=5;
+  obsone=createSprite(500,280,100,20);
+  obstwo=createSprite(300,280,100,20);
+  obsthree=createSprite(195,350,100,20);
   obsfour=createSprite(300,420,100,20);
-  obsfour.velocityX=-5;
+  obsfive=createSprite(390,480,100,20);
+  obssix=createSprite(195,480,100,20);
+  obsseven=createSprite(90,420,100,20);
+  obseight=createSprite(500,420,100,20);
+  obsnine=createSprite(390,350,100,20);
+  obsten=createSprite(90,280,100,20);
+  obseleven=createSprite(195,200,100,20);
+  obstwelve=createSprite(390,200,100,20);
  rabbit.shapeColor="brown";
  carrot.shapeColor="orange";
   obsone.shapeColor="red";
   obstwo.shapeColor="red";
   obsthree.shapeColor="red";
   obsfour.shapeColor="red";
+  obsfive.shapeColor="red";
+  obssix.shapeColor="red";
+  obsseven.shapeColor="red";
+  obseight.shapeColor="red";
+  obsnine.shapeColor="red";
+  obsten.shapeColor="red";
+  obseleven.shapeColor="red";
+  obstwelve.shapeColor="red";
 }
 
 function draw() {
@@ -34,14 +54,6 @@ function draw() {
  rabbit.bounceOff(edges[1]);
  rabbit.bounceOff(edges[2]);
  rabbit.bounceOff(edges[3]);
-  obsone.bounceOff(edges[0]);
-  obsone.bounceOff(edges[1]);
-  obstwo.bounceOff(edges[0]);
-  obstwo.bounceOff(edges[1]);
-  obsthree.bounceOff(edges[0]);
-  obsthree.bounceOff(edges[1]);
-  obsfour.bounceOff(edges[0]);
-  obsfour.bounceOff(edges[1]);
   if(keyDown("up"))
   {
    rabbit.y=rabbit.y-4;
@@ -62,27 +74,58 @@ function draw() {
   if (rabbit.isTouching (carrot))
   {
     text("you win",200,200);
-    obsone.velocityX=0;
-    obstwo.velocityX=0;
-    obsthree.velocityX=0;
-    obsfour.velocityX=0;
   }
   if (rabbit.isTouching(obsone))
   {
+    text("you lose" , 200,200)
    rabbit.x=40;
    rabbit.y=550;
   }
   if (rabbit.isTouching(obstwo))
   {
+    text("you lose" , 200,200)
    rabbit.x=40;
    rabbit.y=550;
   }
   if (rabbit.isTouching(obsthree))
   {
+    text("you lose" , 200,200)
    rabbit.x=40;
    rabbit.y=550;
-  }  if (rabbit.isTouching(obsfour))
+  }  
+  if (rabbit.isTouching(obsfour))
   {
+    text("you lose" , 200,200)
+   rabbit.x=40;
+   rabbit.y=550;
+  }
+  if (rabbit.isTouching(obsfive))
+  {
+    text("you lose" , 200,200)
+   rabbit.x=40;
+   rabbit.y=550;
+  }
+  if (rabbit.isTouching(obssix))
+  {
+    text("you lose" , 200,200)
+   rabbit.x=40;
+   rabbit.y=550;
+  }
+  if (rabbit.isTouching(obsseven))
+  {
+    text("you lose" , 200,200)
+   rabbit.x=40;
+   rabbit.y=550;
+  }
+  if (rabbit.isTouching(obseight))
+  {
+    text("you lose" , 200,200)
+   rabbit.x=40;
+   rabbit.y=550;
+  }
+  if (rabbit.isTouching(obsnine))
+  {
+    text("you lose" , 200,200)
    rabbit.x=40;
    rabbit.y=550;
   }
