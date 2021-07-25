@@ -9,6 +9,9 @@ var obssix;
 var obsseven;
 var obseight;
 var obsnine;
+var obsten;
+var obseleven;
+var obstwelve;
 var edges;
 
 
@@ -17,21 +20,32 @@ function setup() {
   edges=createEdgeSprites();
  rabbit=createSprite(40,550,30,30);
  carrot=createSprite(550,40,30,30);
-  obsone=createSprite(300,120,100,20);
-  obstwo=createSprite(300,220,100,20);
-  obsthree=createSprite(300,320,100,20);
+  obsone=createSprite(500,280,100,20);
+  obstwo=createSprite(300,280,100,20);
+  obsthree=createSprite(195,350,100,20);
   obsfour=createSprite(300,420,100,20);
   obsfive=createSprite(390,480,100,20);
-  obssix=createSprite(210,480,100,20);
-  obsseven=createSprite(300,420,100,20);
-  obseight=createSprite(300,420,100,20);
-  obsnine=createSprite(300,420,100,20);
+  obssix=createSprite(195,480,100,20);
+  obsseven=createSprite(90,420,100,20);
+  obseight=createSprite(500,420,100,20);
+  obsnine=createSprite(390,350,100,20);
+  obsten=createSprite(90,280,100,20);
+  obseleven=createSprite(195,200,100,20);
+  obstwelve=createSprite(390,200,100,20);
  rabbit.shapeColor="brown";
  carrot.shapeColor="orange";
   obsone.shapeColor="red";
   obstwo.shapeColor="red";
   obsthree.shapeColor="red";
   obsfour.shapeColor="red";
+  obsfive.shapeColor="red";
+  obssix.shapeColor="red";
+  obsseven.shapeColor="red";
+  obseight.shapeColor="red";
+  obsnine.shapeColor="red";
+  obsten.shapeColor="red";
+  obseleven.shapeColor="red";
+  obstwelve.shapeColor="red";
 }
 
 function draw() {
